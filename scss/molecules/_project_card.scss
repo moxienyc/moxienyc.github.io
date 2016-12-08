@@ -1,8 +1,8 @@
 .project_card {
-  background: #373E4A;
+  background: $project-card;
   width: 220px;
   height: 220px;
-  margin: 12.5px;
+  margin: 10px;
   display:flex;
   transition: .5s;
   overflow: hidden;
@@ -11,15 +11,9 @@
 }
 .project_card:hover {
     box-shadow: 0 10px 20px rgba(204,204,204,0.5);
-    transform: translateY(-20px);
-}
-.project_card:nth-child(4n+1) {
-  margin-left: 0px;
+    transform: translateY(-10px);
 }
 
-.project_card:nth-child(4n+4) {
-  margin-right: 0px;
-}
 
 .project_card .hover {
   background: #fff;

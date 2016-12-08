@@ -1,8 +1,50 @@
 /* IMPORT GLOBAL ELEMENTS */
+@font-face {
+  font-family: Proxima Nova;
+  src: url(../fonts/ProximaNova-Light.woff);
+  src: url(../fonts/ProximaNova-Light.eot);
+  src: url(../fonts/ProximaNova-Light.otf);
+  src: url(../fonts/ProximaNova-Light.svg);
+  src: url(../fonts/ProximaNova-Light.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url(../fonts/ProximaNova-Regular.woff);
+  src: url(../fonts/ProximaNova-Regular.eot);
+  src: url(../fonts/ProximaNova-Regular.otf);
+  src: url(../fonts/ProximaNova-Regular.svg);
+  src: url(../fonts/ProximaNova-Regular.ttf);
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url(../fonts/ProximaNova-Semibold.woff);
+  src: url(../fonts/ProximaNova-Semibold.eot);
+  src: url(../fonts/ProximaNova-Semibold.otf);
+  src: url(../fonts/ProximaNova-Regular.svg);
+  src: url(../fonts/ProximaNova-Semibold.ttf);
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url(../fonts/ProximaNova-Bold.woff);
+  src: url(../fonts/ProximaNova-Bold.eot);
+  src: url(../fonts/ProximaNova-Bold.otf);
+  src: url(../fonts/ProximaNova-Bold.svg);
+  src: url(../fonts/ProximaNova-Bold.ttf);
+  font-weight: 700;
+  font-style: normal; }
+
+/* FONT FAMILY */
+/* FONT WEIGHTS */
 #container {
   max-width: 960px;
   margin: auto;
-  font-family: Proxima Nova; }
+  font-family: "Proxima Nova", serif; }
 
 /* IMPORT ORGANISMS */
 #header {
@@ -22,7 +64,7 @@
   margin-top: 100px; }
   #projects ul {
     padding: 0;
-    margin: 0;
+    margin: 0 auto 80px auto;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -31,8 +73,7 @@
     flex-direction: row;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-bottom: 80px; }
+    flex-wrap: wrap; }
     #projects ul li {
       padding: 0px; }
 
@@ -61,20 +102,23 @@
     letter-spacing: 7px;
     font-size: 40px;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    color: #212121; }
   .name h2 {
     font-weight: 400;
+    color: #5B6473;
     margin: 0;
     font-size: 14px;
     margin-top: 10px; }
     .name h2 i {
-      font-style: normal; }
+      font-style: normal;
+      font-weight: 600; }
 
 .project_card {
   background: #373E4A;
   width: 220px;
   height: 220px;
-  margin: 12.5px;
+  margin: 10px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -84,15 +128,9 @@
 
 .project_card:hover {
   box-shadow: 0 10px 20px rgba(204, 204, 204, 0.5);
-  -webkit-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  transform: translateY(-20px); }
-
-.project_card:nth-child(4n+1) {
-  margin-left: 0px; }
-
-.project_card:nth-child(4n+4) {
-  margin-right: 0px; }
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px); }
 
 .project_card .hover {
   background: #fff;
@@ -156,10 +194,11 @@
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 1px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  color: #5B6473; }
 
 .slogan {
-  font-weight: 300;
+  font-weight: 100;
   font-size: 40px;
   line-height: 63px; }
 
@@ -192,7 +231,7 @@
       display: inline-block;
       font-size: 14px;
       font-weight: 600;
-      color: #d00000;
+      color: #D00000;
       letter-spacing: 1px; }
 
 .divider {
@@ -202,3 +241,27 @@
   width: 1px;
   height: 100px;
   background: #212121; }
+
+@media only screen and (max-width: 1024px) {
+  #container {
+    padding: 0 30px; }
+  #projects ul {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .project_card {
+    margin: 10px !important; }
+  #header {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; }
+    #header .logo {
+      margin-bottom: 35px; }
+  #hero {
+    text-align: center; }
+  .divider {
+    display: none; } }

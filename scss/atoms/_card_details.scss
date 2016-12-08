@@ -3,7 +3,7 @@
   .detail {
     display: inline-block;
     margin-right: 10px;
-    color: #212121;
+    color: $base-color;
     img {
       display: inline-block;
       vertical-align: middle;
@@ -12,8 +12,8 @@
     .number {
       display: inline-block;
       font-size: 14px;
-      font-weight: 600;
-      color:#d00000;
+      font-weight: $semi-bold;
+      color:$nolte-red;
       letter-spacing: 1px;
     }
   }

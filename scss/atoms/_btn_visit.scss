@@ -1,5 +1,5 @@
 .btn_visit {
-background: #D00000;
+background: $nolte-red;
 width: 310px;
 height: 47px;
 outline: 0;
@@ -8,13 +8,13 @@ color:#fff;
 letter-spacing: 4.1px;
 font-size: 14px;
 text-align: center;
-font-weight: 600;
+font-weight: $semi-bold;
 margin-top: 50px;
 transition: .3s;
 cursor: pointer;
 }
 .btn_visit:hover {
-  background: #FF3030;
+  background: $nolte-red-light;
 }
 .btn_visit:after  {
     content:'VISIT US IN GITHUB!';

@@ -1,8 +1,8 @@
 /* IMPORT GLOBAL ELEMENTS */
+@import "common/font-face";
 @import "common/colors";
 @import "common/typography";
 @import "common/global";
-@import "common/variables";
 
 
 /* IMPORT ORGANISMS */
@@ -27,4 +27,6 @@
 @import "atoms/card_title";
 @import "atoms/card_text";
 @import "atoms/card_details";
-@import "atoms/divider"
+@import "atoms/divider";
+
+@import "common/media";

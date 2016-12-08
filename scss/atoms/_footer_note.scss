@@ -1,7 +1,7 @@
 #footer p {
-  font-weight: 100;
+  font-weight: $light;
   strong {
-    font-weight: 600;
+    font-weight: $semi-bold;
   }
 }
 #footer img {
