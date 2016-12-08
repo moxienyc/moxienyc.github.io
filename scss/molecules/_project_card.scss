@@ -1,0 +1,40 @@
+.project_card {
+  background: #373E4A;
+  width: 220px;
+  height: 220px;
+  margin: 12.5px;
+  display:flex;
+  transition: .5s;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(166,166,166,0.5);
+
+}
+.project_card:hover {
+    box-shadow: 0 10px 20px rgba(204,204,204,0.5);
+    transform: translateY(-20px);
+}
+.project_card:nth-child(4n+1) {
+  margin-left: 0px;
+}
+
+.project_card:nth-child(4n+4) {
+  margin-right: 0px;
+}
+
+.project_card .hover {
+  background: #fff;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  height: 190px;
+  -webkit-clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0% 100%);
+  margin-bottom: -1px;
+  margin-right: -1px;
+  padding: 0 20px;
+  transition:.5s;
+  transform: translateY(190px);
+}
+
+.project_card:hover .hover {
+  transform: translateY(0px);
+}

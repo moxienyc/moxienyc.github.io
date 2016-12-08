@@ -1,0 +1,204 @@
+/* IMPORT GLOBAL ELEMENTS */
+#container {
+  max-width: 960px;
+  margin: auto;
+  font-family: Proxima Nova; }
+
+/* IMPORT ORGANISMS */
+#header {
+  margin-top: 110px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%; }
+
+#hero {
+  margin-top: 64px; }
+
+#projects {
+  margin-top: 100px; }
+  #projects ul {
+    padding: 0;
+    margin: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 80px; }
+    #projects ul li {
+      padding: 0px; }
+
+#footer {
+  margin-top: 130px;
+  text-align: center;
+  margin-bottom: 100px; }
+  #footer .divider-h {
+    width: 47px;
+    height: 1px;
+    background: #212121;
+    display: block;
+    margin: 0 auto 50px auto; }
+
+/* IMPORT MOLECULES */
+.logo {
+  display: inline-block; }
+
+.logo img {
+  width: 135px; }
+
+.name {
+  display: inline-block; }
+  .name h1 {
+    font-weight: 600;
+    letter-spacing: 7px;
+    font-size: 40px;
+    padding: 0;
+    margin: 0; }
+  .name h2 {
+    font-weight: 400;
+    margin: 0;
+    font-size: 14px;
+    margin-top: 10px; }
+    .name h2 i {
+      font-style: normal; }
+
+.project_card {
+  background: #373E4A;
+  width: 220px;
+  height: 220px;
+  margin: 12.5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  transition: .5s;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(166, 166, 166, 0.5); }
+
+.project_card:hover {
+  box-shadow: 0 10px 20px rgba(204, 204, 204, 0.5);
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px); }
+
+.project_card:nth-child(4n+1) {
+  margin-left: 0px; }
+
+.project_card:nth-child(4n+4) {
+  margin-right: 0px; }
+
+.project_card .hover {
+  background: #fff;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  height: 190px;
+  -webkit-clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0% 100%);
+  margin-bottom: -1px;
+  margin-right: -1px;
+  padding: 0 20px;
+  transition: .5s;
+  -webkit-transform: translateY(190px);
+  -ms-transform: translateY(190px);
+  transform: translateY(190px); }
+
+.project_card:hover .hover {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px); }
+
+/* IMPORT ATOMS */
+.btn_visit {
+  background: #D00000;
+  width: 310px;
+  height: 47px;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  letter-spacing: 4.1px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 50px;
+  transition: .3s;
+  cursor: pointer; }
+
+.btn_visit:hover {
+  background: #FF3030; }
+
+.btn_visit:after {
+  content: 'VISIT US IN GITHUB!'; }
+
+.btn_visit:hover:after {
+  content: 'http://github.com/wearenolte';
+  letter-spacing: 1px; }
+
+#footer p {
+  font-weight: 100; }
+  #footer p strong {
+    font-weight: 600; }
+
+#footer img {
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin: auto; }
+
+#projects h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 60px; }
+
+.slogan {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 63px; }
+
+.card_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 55px; }
+
+.card_text {
+  margin-top: 5px;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 20px;
+  display: block; }
+
+.details {
+  margin-top: 10px; }
+  .details .detail {
+    display: inline-block;
+    margin-right: 10px;
+    color: #212121; }
+    .details .detail img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px; }
+    .details .detail .number {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      color: #d00000;
+      letter-spacing: 1px; }
+
+.divider {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 1px;
+  height: 100px;
+  background: #212121; }

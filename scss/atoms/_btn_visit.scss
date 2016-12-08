@@ -1,0 +1,26 @@
+.btn_visit {
+background: #D00000;
+width: 310px;
+height: 47px;
+outline: 0;
+border: 0;
+color:#fff;
+letter-spacing: 4.1px;
+font-size: 14px;
+text-align: center;
+font-weight: 600;
+margin-top: 50px;
+transition: .3s;
+cursor: pointer;
+}
+.btn_visit:hover {
+  background: #FF3030;
+}
+.btn_visit:after  {
+    content:'VISIT US IN GITHUB!';
+}
+
+.btn_visit:hover:after {
+  content:'http://github.com/wearenolte';
+  letter-spacing: 1px;
+}

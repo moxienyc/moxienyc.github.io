@@ -1,0 +1,30 @@
+/* IMPORT GLOBAL ELEMENTS */
+@import "common/colors";
+@import "common/typography";
+@import "common/global";
+@import "common/variables";
+
+
+/* IMPORT ORGANISMS */
+
+@import "organisms/header";
+@import "organisms/hero";
+@import "organisms/projects";
+@import "organisms/footer";
+
+/* IMPORT MOLECULES */
+
+@import "molecules/logo";
+@import "molecules/name";
+@import "molecules/project_card";
+
+/* IMPORT ATOMS */
+
+@import "atoms/btn_visit";
+@import "atoms/footer_note";
+@import "atoms/projects_title";
+@import "atoms/slogan";
+@import "atoms/card_title";
+@import "atoms/card_text";
+@import "atoms/card_details";
+@import "atoms/divider"
