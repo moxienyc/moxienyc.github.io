@@ -178,7 +178,7 @@
   background: #FF3030; }
 
 .btn_visit:after {
-  content: 'VISIT US IN GITHUB!'; }
+  content: 'VISIT US ON GITHUB!'; }
 
 .btn_visit:hover:after {
   content: 'http://github.com/wearenolte';
