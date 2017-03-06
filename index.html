@@ -16,9 +16,10 @@
         }).done(function(data) {
           for (var i = 0; i < data.length; i++) {
                  $('#repos').append(
-            '<li class="project_card"><div class="hover">'
-            + '<span class="card_title">' + data[i].name + '</span>'
-            + '<span class="card_text">' + data[i].description + '<span>'
+            '<a href="' + data[i].html_url + '">'
+            + '<li class="project_card"><div class="hover">'
+            + '<span class="card_title">' + data[i].name.substring(0,30) + '</span>'
+            + '<span class="card_text">' + data[i].description.substring(0,30) + '<span>'
             + '<div class="details">'
             + '<div class="detail"><img src="images/fork.svg" alt="">'
             + '<div class="number">'
@@ -31,7 +32,7 @@
             + '</div>'
             +'</div>'
             +'</div>'
-            + '</div></li>')
+            + '</div></li></a>')
           }
         })
         $("span.card_text").text(function(index, currentText) {

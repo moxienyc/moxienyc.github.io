@@ -1,5 +1,9 @@
 #projects {
   margin-top: 100px;
+  a {
+    color:$dark;
+    text-decoration: none;
+  }
   ul {
     padding: 0;
     margin: 0 auto 80px auto;
