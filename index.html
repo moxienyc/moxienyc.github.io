@@ -4,10 +4,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nolte - Open source</title>
-    <link rel="stylesheet" href="/css/normalize.css" media="screen" title="no title">
-    <link rel="stylesheet" href="/css/master.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   </head>
   <body>
+    <script type="text/javascript">
+        $.ajax({
+            url: "https://api.github.com/users/wearenolte/repos",
+            context: document.body
+        }).done(function(data) {
+          for (var i = 0; i < data.length; i++) {
+                 $('#repos').append(
+            '<li class="project_card"><div class="hover">'
+            + '<span class="card_title">' + data[i].name + '</span>'
+            + '<span class="card_text">' + data[i].description + '<span>'
+            + '<div class="details">'
+            + '<div class="detail"><img src="images/fork.svg" alt="">'
+            + '<div class="number">'
+            + data[i].forks_count
+            + '</div>'
+            +'</div>'
+            + '<div class="detail"><img src="images/star.svg" alt="">'
+            + '<div class="number">'
+            + data[i].stargazers_count
+            + '</div>'
+            +'</div>'
+            +'</div>'
+            + '</div></li>')
+          }
+        })
+        $("span.card_text").text(function(index, currentText) {
+    return currentText.substr(0, 10);
+});
+    </script>
   <div id="container">
     <div id="header">
       <div class="logo">
@@ -25,125 +55,7 @@
     </div>
     <div id="projects">
       <h3>DEVELOPMENT</h3>
-        <ul>
-          <li class="project_card">
-            <div class="hover">
-              <span class="card_title">Postmark WordPress Plugin</span>
-              <span class="card_text">Overwrites wp_mail to send emails through Postmark</span>
-              <div class="details">
-                <div class="detail">
-                  <img src="images/fork.svg" alt=""><div class="number">14</div>
-                  </div>
-                  <div class="detail">
-                    <img src="images/star.svg" alt=""><div class="number">712</div>
-                    </div>
-              </div>
-            </div>
-          </li>
-          <li class="project_card">
-            <div class="hover">
-              <span class="card_title">Postmark WordPress Plugin</span>
-              <span class="card_text">Overwrites wp_mail to send emails through Postmark</span>
-              <div class="details">
-                <div class="detail">
-                  <img src="images/fork.svg" alt=""><div class="number">14</div>
-                  </div>
-                  <div class="detail">
-                    <img src="images/star.svg" alt=""><div class="number">712</div>
-                    </div>
-              </div>
-            </div>
-
-          </li>
-          <li class="project_card">    <div class="hover">
-                <span class="card_title">Postmark WordPress Plugin</span>
-                <span class="card_text">Overwrites wp_mail to send emails through Postmark</span>
-                <div class="details">
-                  <div class="detail">
-                    <img src="images/fork.svg" alt=""><div class="number">14</div>
-                    </div>
-                    <div class="detail">
-                      <img src="images/star.svg" alt=""><div class="number">712</div>
-                      </div>
-                </div>
-              </div>
-          </li>
-          <li class="project_card">    <div class="hover">
-                <span class="card_title">Postmark WordPress Plugin</span>
-                <span class="card_text">Overwrites wp_mail to send emails through Postmark</span>
-                <div class="details">
-                  <div class="detail">
-                    <img src="images/fork.svg" alt=""><div class="number">14</div>
-                    </div>
-                    <div class="detail">
-                      <img src="images/star.svg" alt=""><div class="number">712</div>
-                      </div>
-                </div>
-              </div>
-          </li>
-          <li class="project_card"></li>
-          <li class="project_card"></li>
-        </ul>
-        <h3>DESIGN</h3>
-          <ul>
-            <li class="project_card">
-              <div class="hover">
-                <span class="card_title">Postmark WordPress Plugin</span>
-                <span class="card_text">Overwrites wp_mail to send emails through Postmark</span>
-                <div class="details">
-                  <div class="detail">
-                    <img src="images/fork.svg" alt=""><div class="number">14</div>
-                    </div>
-                    <div class="detail">
-                      <img src="images/star.svg" alt=""><div class="number">712</div>
-                      </div>
-                </div>
-              </div>
-            </li>
-            <li class="project_card">
-              <div class="hover">
-                <span class="card_title">Postmark WordPress Plugin</span>
-                <span class="card_text">Overwrites wp_mail to send emails through Postmark</span>
-                <div class="details">
-                  <div class="detail">
-                    <img src="images/fork.svg" alt=""><div class="number">14</div>
-                    </div>
-                    <div class="detail">
-                      <img src="images/star.svg" alt=""><div class="number">712</div>
-                      </div>
-                </div>
-              </div>
-
-            </li>
-            <li class="project_card">    <div class="hover">
-                  <span class="card_title">Postmark WordPress Plugin</span>
-                  <span class="card_text">Overwrites wp_mail to send emails through Postmark</span>
-                  <div class="details">
-                    <div class="detail">
-                      <img src="images/fork.svg" alt=""><div class="number">14</div>
-                      </div>
-                      <div class="detail">
-                        <img src="images/star.svg" alt=""><div class="number">712</div>
-                        </div>
-                  </div>
-                </div>
-            </li>
-            <li class="project_card">    <div class="hover">
-                  <span class="card_title">Postmark WordPress Plugin</span>
-                  <span class="card_text">Overwrites wp_mail to send emails through Postmark</span>
-                  <div class="details">
-                    <div class="detail">
-                      <img src="images/fork.svg" alt=""><div class="number">14</div>
-                      </div>
-                      <div class="detail">
-                        <img src="images/star.svg" alt=""><div class="number">712</div>
-                        </div>
-                  </div>
-                </div>
-            </li>
-            <li class="project_card"></li>
-            <li class="project_card"></li>
-          </ul>
+    <ul id="repos"></ul>
     </div>
     <div id="footer">
       <div class="divider-h"></div>
